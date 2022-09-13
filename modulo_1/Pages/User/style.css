@@ -1,0 +1,94 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 15fr;
+  gap: 0.25%;
+  margin: 0%;
+  background-color: rgb(131, 130, 130);
+  color: white;
+  text-align: left;
+}
+
+.grid-container > div {
+  background-color: #0d1117;
+}
+
+.header {
+  display: grid;
+  grid-column: 1/4;
+  max-height: 100%;
+  border-bottom: 1px solid rgb(131, 130, 130);
+}
+
+.header-block {
+  display: block;
+}
+
+.menus {
+  grid-column: 2/4;
+}
+
+.menus > p {
+  display: flex;
+  float: left;
+  padding-right: 7%;
+}
+.repository-info {
+  display: block;
+}
+.profilePicture {
+  display: flex;
+  border-radius: 50%;
+  vertical-align: middle;
+  justify-content: right;
+  height: auto;
+  max-width: 100%;
+  box-shadow: 0 0 0 1px #000;
+}
+.username {
+  font-size: 2vw;
+  line-height: 0;
+  opacity: 60%;
+}
+.name {
+  font-size: 2vw;
+}
+
+.contact-info {
+  line-height: 20%;
+  margin-top: 20%;
+}
+
+.user-info {
+  grid-row: 2/4;
+  padding-left: 10%;
+  color: rgba(255, 255, 255, 0.781);
+}
+
+.repository-name {
+  color: #5397db;
+  font-size: 3.4vw;
+  font-weight: bold;
+}
+.home-button {
+  margin-top: 2%;
+  display: flex;
+  float: left;
+  background-color: #0d1117;
+  border: 0;
+  color: white;
+  font-size: 3vw;
+}
+.home-button:hover {
+  opacity: 60%;
+}
+.language {
+  font-size: 2vw;
+  opacity: 40%;
+}

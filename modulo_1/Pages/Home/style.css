@@ -1,0 +1,69 @@
+p {
+  display: flex;
+  justify-content: center;
+  margin: 3% auto 0%;
+  padding-inline: 50%;
+  text-align: center;
+  /* font-size: 800%;*/ /*128px */
+  font-size: 12.5vw;
+}
+
+html,
+body {
+  font-family: "Noto Sans";
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+  width: 100%;
+}
+span.blue {
+  color: #0b78b9;
+}
+
+span.red {
+  color: #f03e39;
+}
+
+span.yellow {
+  color: #ffb713;
+}
+
+span.green {
+  color: #00a451;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 20%;
+  background-color: #cdcdce;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  /* font-size: 300%; */
+  font-size: 6vw;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4);
+}
+button:hover {
+  opacity: 85%;
+}
+input {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 3%;
+  width: 55%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 3px solid#6ecffa;
+  font-size: 320%;
+  padding-right: 8%;
+  background-clip: padding-box;
+  background-image: url("../../Images/keyboardIcon.PNG");
+  background-repeat: no-repeat;
+  background-position: 96% 50%;
+  background-size: 10%;
+}
