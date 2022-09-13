@@ -4,7 +4,7 @@ body {
   height: 100%;
 }
 
-.grid-container {
+#grid-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 15fr;
@@ -15,34 +15,34 @@ body {
   text-align: left;
 }
 
-.grid-container > div {
+#grid-container > div {
   background-color: #0d1117;
 }
 
-.header {
+#header {
   display: grid;
   grid-column: 1/4;
   max-height: 100%;
   border-bottom: 1px solid rgb(131, 130, 130);
 }
 
-.header-block {
+#header-block {
   display: block;
 }
 
-.menus {
+#menus {
   grid-column: 2/4;
 }
 
-.menus > p {
+#menus > p {
   display: flex;
   float: left;
   padding-right: 7%;
 }
-.repository-info {
+#repository-info {
   display: block;
 }
-.profilePicture {
+#profilePicture {
   display: flex;
   border-radius: 50%;
   vertical-align: middle;
@@ -51,32 +51,32 @@ body {
   max-width: 100%;
   box-shadow: 0 0 0 1px #000;
 }
-.username {
+#username {
   font-size: 2vw;
   line-height: 0;
   opacity: 60%;
 }
-.name {
+#name {
   font-size: 2vw;
 }
 
-.contact-info {
+#contact-info {
   line-height: 20%;
   margin-top: 20%;
 }
 
-.user-info {
+#user-info {
   grid-row: 2/4;
   padding-left: 10%;
-  color: rgba(255, 255, 255, 0.781);
+  color: rgba(255, 255, 255, 0#781);
 }
 
-.repository-name {
+#repository-name {
   color: #5397db;
   font-size: 3.4vw;
   font-weight: bold;
 }
-.home-button {
+#home-button {
   margin-top: 2%;
   display: flex;
   float: left;
@@ -85,10 +85,10 @@ body {
   color: white;
   font-size: 3vw;
 }
-.home-button:hover {
+#home-button:hover {
   opacity: 60%;
 }
-.language {
+#language {
   font-size: 2vw;
   opacity: 40%;
 }

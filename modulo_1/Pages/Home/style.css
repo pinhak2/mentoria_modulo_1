@@ -32,7 +32,7 @@ span.green {
   color: #00a451;
 }
 
-button {
+input[type=submit] {
   display: flex;
   justify-content: center;
   margin-right: auto;
@@ -46,10 +46,10 @@ button {
   font-size: 6vw;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4);
 }
-button:hover {
+input[type=submit]:hover {
   opacity: 85%;
 }
-input {
+input[type=text] {
   display: flex;
   justify-content: center;
   margin-right: auto;
