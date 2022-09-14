@@ -16,7 +16,7 @@ body {
 }
 
 #grid-container > div {
-  background-color: #0d1117;
+  background-color: #181818;
 }
 
 #header {
@@ -84,6 +84,12 @@ body {
   border: 0;
   color: white;
   font-size: 3vw;
+}
+.singleRepo{
+  box-sizing: border-box;
+  margin: 3%;
+  background-color:#070707;
+  padding: 5%;
 }
 #home-button:hover {
   opacity: 60%;

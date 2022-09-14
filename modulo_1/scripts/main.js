@@ -10,10 +10,18 @@ function goToUser() {
 
 async function search() {
   user = localStorage.getItem("user");
+  if (user == "") {
+    alert("User cannot be empty!");
+    return goToHome();
+  }
   let array = [];
   const response = await fetch("https://api.github.com/users/" + user)
     .then((response) => response.json())
     .then((data) => {
+      if (data.message == "Not Found") {
+        alert("User not found!");
+        return goToHome();
+      }
       for (i in data) {
         array[i] = data[i];
       }
@@ -65,4 +73,43 @@ function addDataToHTML(data) {
     }
   }
   addImage(data.avatar_url);
+  addRepos();
+}
+
+async function addRepos() {
+  user = localStorage.getItem("user");
+  const response = await fetch(
+    "https://api.github.com/users/" + user + "/repos"
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      for (var i in data) {
+        addSingleRepository(data[i]);
+      }
+    })
+    .finally(() => {})
+    .catch((error) => console.error(error));
+}
+
+function addSingleRepository(data) {
+  console.log(data);
+
+  const div = document.createElement("div");
+  div.setAttribute("class", "singleRepo");
+  div.innerHTML =
+    `
+    <div id="repository-name">
+          <dt><a href=` +
+    data.html_url +
+    `>` +
+    data.name +
+    `</a></dt>
+        </div>
+        <div id="language">
+          <dd>` +
+    data.language +
+    `</dd>
+        </div>
+  `;
+  document.getElementById("list").appendChild(div);
 }
